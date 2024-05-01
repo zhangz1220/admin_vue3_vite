@@ -1,5 +1,5 @@
 
-## 一个极简的后台基础模板，企业级！开箱即用1！
+## 一个极简的后台基础模板，企业级！开箱即用！
 
 ## 1、[在线体验地址](http://3thousand.top/admin)
 ## 2、[《项目框架从0搭建教程》](https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3673977559881744710&origin_type=604)
