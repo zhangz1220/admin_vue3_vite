@@ -2,33 +2,18 @@
 	<div class="c-toolbar">
 		<el-row :gutter="10">
 			<el-col v-if="haveAdd" :span="1.5">
-				<el-button
-					type="primary"
-					plain
-					icon="Plus"
-					@click="handleAdd"
-				>
+				<el-button type="primary" plain icon="Plus" @click="handleAdd">
 					新增
 				</el-button>
 			</el-col>
 
 			<el-col v-if="haveImport" :span="1.5">
-				<el-button
-					type="info"
-					plain
-					icon="Upload"
-					@click="handleImport"
-				>
+				<el-button type="info" plain icon="Upload" @click="handleImport">
 					导入
 				</el-button>
 			</el-col>
 			<el-col v-if="haveOut" :span="1.5">
-				<el-button
-					type="warning"
-					plain
-					icon="Download"
-					@click="handleOut"
-				>
+				<el-button type="warning" plain icon="Download" @click="handleOut">
 					导出
 				</el-button>
 			</el-col>
@@ -47,34 +32,31 @@
 				</el-tooltip>
 			</el-row>
 			<el-dialog v-model="open" :title="title" append-to-body>
-				<el-transfer
-					v-model="value"
-					:titles="['显示', '隐藏']"
-					:data="columns"
-					@change="dataChange"
-				></el-transfer>
+				<el-transfer v-model="value" :titles="['显示', '隐藏']" :data="columns" @change="dataChange"></el-transfer>
 			</el-dialog>
 		</div>
 	</div>
 </template>
 
 <style lang='scss' scoped>
-
 .c-toolbar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
 }
+
 :deep(.el-transfer__button) {
-  display: block;
-  margin-left: 0;
-  border-radius: 50%;
+	display: block;
+	margin-left: 0;
+	border-radius: 50%;
 }
+
 :deep(.el-transfer__button:first-child) {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
+
 .my-el-transfer {
-  text-align: center;
+	text-align: center;
 }
 </style>
 
